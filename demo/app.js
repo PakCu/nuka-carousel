@@ -19,6 +19,9 @@ const App = React.createClass({
           data={this.setCarouselData.bind(this, 'carousel')}
           slideIndex={this.state.slideIndex}
           wrapAround={true}
+          cellAlign='center'
+          slidesToShow={3}
+          slidesToScroll={1}
           afterSlide={newSlideIndex => this.setState({ slideIndex: newSlideIndex })}>
           <img src="http://placehold.it/1000x400&text=slide1"/>
           <img src="http://placehold.it/1000x400&text=slide2"/>

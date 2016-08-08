@@ -783,11 +783,6 @@ const Carousel = React.createClass({
       }
 
       var slidesAfter = Math.ceil((Math.abs(positionValue) - Math.abs(end)) / this.state.slideWidth);
-
-      if (this.state.slideWidth !== 1) {
-        slidesAfter = Math.ceil((Math.abs(positionValue) - (this.state.slideWidth)) / this.state.slideWidth);
-      }
-
       if (index <= slidesAfter - 1) {
         return (this.state.slideWidth + this.props.cellSpacing) * this.state.slideCount;
       }
