@@ -18,6 +18,7 @@ const App = React.createClass({
           ref="carousel"
           data={this.setCarouselData.bind(this, 'carousel')}
           slideIndex={this.state.slideIndex}
+          wrapAround={true}
           afterSlide={newSlideIndex => this.setState({ slideIndex: newSlideIndex })}>
           <img src="http://placehold.it/1000x400&text=slide1"/>
           <img src="http://placehold.it/1000x400&text=slide2"/>
@@ -29,7 +30,7 @@ const App = React.createClass({
         <button onClick={() => this.setState({ slideIndex: 0 })}>1</button>
         <button onClick={() => this.setState({ slideIndex: 1 })}>2</button>
         <button onClick={() => this.setState({ slideIndex: 2 })}>3</button>
-        <button onClick={() => this.setState({ slideIndex: 3 })}>4</button>
+        <button onClick={() => this.setState({ slideIndex: 2 })}>4</button>
         <button onClick={() => this.setState({ slideIndex: 4 })}>5</button>
         <button onClick={() => this.setState({ slideIndex: 5 })}>6</button>
       </div>
