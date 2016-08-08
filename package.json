@@ -1,7 +1,7 @@
 {
-  "name": "nuka-carousel",
-  "version": "2.0.2",
-  "description": "Pure React Carousel",
+  "name": "fat-nuka-carousel",
+  "version": "2.0.3",
+  "description": "fat's fork of Pure React Carousel",
   "main": "index.js",
   "dependencies": {
     "exenv": "^1.2.0",
