@@ -789,7 +789,7 @@ const Carousel = React.createClass({
       }
 
       if (index <= slidesAfter - 1) {
-        return (this.state.slideWidth + this.props.cellSpacing) * (this.state.slideCount + index);
+        return (this.state.slideWidth + this.props.cellSpacing) * this.state.slideCount;
       }
     }
 
